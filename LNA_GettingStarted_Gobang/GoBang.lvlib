@@ -18,7 +18,6 @@
 		<Item Name="GoBang_WinSituation.vi" Type="VI" URL="../SubVIs/GoBang_WinSituation.vi"/>
 		<Item Name="GoBang_WinSituationCheckArray.vi" Type="VI" URL="../SubVIs/GoBang_WinSituationCheckArray.vi"/>
 		<Item Name="GoBang_WinSituationCheckLine.vi" Type="VI" URL="../SubVIs/GoBang_WinSituationCheckLine.vi"/>
-		<Item Name="GoBang_Data2PV.vi" Type="VI" URL="../SubVIs/GoBang_Data2PV.vi"/>
 	</Item>
 	<Item Name="TypeDefs" Type="Folder">
 		<Item Name="BoardField.ctl" Type="VI" URL="../typdefs/BoardField.ctl"/>
@@ -26,17 +25,23 @@
 	</Item>
 	<Item Name="Actors" Type="Folder">
 		<Item Name="GOBANG Server" Type="Folder">
-			<Item Name="ServerMsgs" Type="Folder">
+			<Item Name="Messages" Type="Folder">
+				<Item Name="Update Connection State Msg.lvclass" Type="LVClass" URL="../CS++GoBangServer Messages/Update Connection State Msg/Update Connection State Msg.lvclass"/>
 				<Item Name="Analyse Board Msg.lvclass" Type="LVClass" URL="../CS++GoBangServer Messages/Analyse Board Msg/Analyse Board Msg.lvclass"/>
 				<Item Name="JoinGame Msg.lvclass" Type="LVClass" URL="../CS++GoBangServer Messages/JoinGame Msg/JoinGame Msg.lvclass"/>
+				<Item Name="Reset Board Msg.lvclass" Type="LVClass" URL="../CS++GoBangServer Messages/Reset Board Msg/Reset Board Msg.lvclass"/>
 			</Item>
 			<Item Name="CS++GoBangServer.lvclass" Type="LVClass" URL="../Server/CS++GoBangServer.lvclass"/>
 			<Item Name="Launch GoBang Server.vi" Type="VI" URL="../Server/Launch GoBang Server.vi"/>
 		</Item>
 		<Item Name="GOBANG Client" Type="Folder">
+			<Item Name="Messages" Type="Folder">
+				<Item Name="Show Disconnected Msg Msg.lvclass" Type="LVClass" URL="../CS++GoBangClient Messages/Show Disconnected Msg Msg/Show Disconnected Msg Msg.lvclass"/>
+			</Item>
 			<Item Name="CS++GoBangClient.lvclass" Type="LVClass" URL="../Client/CS++GoBangClient.lvclass"/>
 			<Item Name="Launch GobangBoard.vi" Type="VI" URL="../Client/Launch GobangBoard.vi"/>
 		</Item>
 	</Item>
 	<Item Name="GoBangSharedVar.lvlib" Type="Library" URL="../GoBangSharedVar.lvlib"/>
+	<Item Name="LNA_GoBang.lvclass" Type="LVClass" URL="../LNA_GoBang/LNA_GoBang.lvclass"/>
 </Library>

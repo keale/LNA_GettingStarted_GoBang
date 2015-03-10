@@ -60,21 +60,56 @@
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
-				<Item Name="Get LV Class Default Value By Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Default Value By Name.vi"/>
-				<Item Name="Get LV Class Default Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Default Value.vi"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
-				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
 			</Item>
-			<Item Name="CS++ProcessVariables.lvlib" Type="Library" URL="../../CS++/Packages/CSPP_Core/Classes/CS++ProcessVariables/CS++ProcessVariables.lvlib"/>
-			<Item Name="CS++BaseClasses.lvlib" Type="Library" URL="../../CS++/Packages/CSPP_Core/Classes/CS++BaseClasses/CS++BaseClasses.lvlib"/>
-			<Item Name="CS++Base.lvlib" Type="Library" URL="../../CS++/Packages/CSPP_Core/Libraries/Base/CS++Base.lvlib"/>
-			<Item Name="CS++Utilities.lvlib" Type="Library" URL="../../CS++/Packages/CSPP_Core/Libraries/Utilities/CS++Utilities.lvlib"/>
-			<Item Name="CS++BaseActor.lvlib" Type="Library" URL="../../CS++/Packages/CSPP_Core/Actors/CS++BaseActor/CS++BaseActor.lvlib"/>
-			<Item Name="CS++GUIActor.lvlib" Type="Library" URL="../../CS++/Packages/CSPP_Core/Actors/CS++GUIActor/CS++GUIActor.lvlib"/>
-			<Item Name="CS++PVMonitor.lvlib" Type="Library" URL="../../CS++/Packages/CSPP_Core/Actors/CS++PVMonitor/CS++PVMonitor.lvlib"/>
 		</Item>
-		<Item Name="Build Specifications" Type="Build"/>
+		<Item Name="Build Specifications" Type="Build">
+			<Item Name="Gobang Server" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{2E2DA11C-9B18-432D-973B-EB7D301BF47E}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{D116FCEF-A6B8-4169-A027-F5F7CFE2AD39}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{5FAEA5EA-67AB-4F1A-8CD3-89CF839C8E4D}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Gobang Server</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Gobang Server</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{314954ED-BC79-4EE4-A65A-CC58B9A4E749}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Gobang server.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Gobang Server/Gobang server.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Gobang Server/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{798A7778-3D74-4C01-9C0D-B7815E12CE92}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/GoBang.lvlib/Actors/GOBANG Server/Launch GoBang Server.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/GoBang.lvlib/GoBangSharedVar.lvlib</Property>
+				<Property Name="Source[2].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[2].type" Type="Str">Library</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="TgtF_companyName" Type="Str">Friedrich-Schiller-Universität Jena</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Gobang Server</Property>
+				<Property Name="TgtF_internalName" Type="Str">Gobang Server</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2015 Friedrich-Schiller-Universität Jena</Property>
+				<Property Name="TgtF_productName" Type="Str">Gobang Server</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{40180798-E37D-4655-90DE-FB2DBE27B15E}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Gobang server.exe</Property>
+			</Item>
+		</Item>
 	</Item>
 </Project>
