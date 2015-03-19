@@ -9,7 +9,7 @@
 		<Item Name="GoBang_Prototype.vi" Type="VI" URL="../SubVIs/GoBang_Prototype.vi"/>
 	</Item>
 	<Item Name="Config" Type="Folder">
-		<Item Name="CS++GoBang with SharedVars.ini" Type="Document" URL="../CS++GoBang with SharedVars.ini"/>
+		<Item Name="GoBang.ini" Type="Document" URL="../GoBang.ini"/>
 	</Item>
 	<Item Name="SubVIs" Type="Folder">
 		<Item Name="GoBang_RemoveStones.vi" Type="VI" URL="../SubVIs/GoBang_RemoveStones.vi"/>
