@@ -33,6 +33,7 @@
 			</Item>
 			<Item Name="CS++GoBangServer.lvclass" Type="LVClass" URL="../Server/CS++GoBangServer.lvclass"/>
 			<Item Name="Launch GoBang Server.vi" Type="VI" URL="../Server/Launch GoBang Server.vi"/>
+			<Item Name="GobangServer_contents.vi" Type="VI" URL="../Server/GobangServer_contents.vi"/>
 		</Item>
 		<Item Name="GOBANG Client" Type="Folder">
 			<Item Name="Messages" Type="Folder">
@@ -40,6 +41,7 @@
 			</Item>
 			<Item Name="CS++GoBangClient.lvclass" Type="LVClass" URL="../Client/CS++GoBangClient.lvclass"/>
 			<Item Name="Launch GobangBoard.vi" Type="VI" URL="../Client/Launch GobangBoard.vi"/>
+			<Item Name="GobangClient_contents.vi" Type="VI" URL="../Client/GobangClient_contents.vi"/>
 		</Item>
 	</Item>
 	<Item Name="GoBangSharedVar.lvlib" Type="Library" URL="../GoBangSharedVar.lvlib"/>

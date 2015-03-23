@@ -71,17 +71,14 @@
 				<Property Name="App_INI_aliasGUID" Type="Str">{2E2DA11C-9B18-432D-973B-EB7D301BF47E}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{D116FCEF-A6B8-4169-A027-F5F7CFE2AD39}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_waitDebugging" Type="Bool">true</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{5FAEA5EA-67AB-4F1A-8CD3-89CF839C8E4D}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">Gobang Server</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Gobang Server</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{314954ED-BC79-4EE4-A65A-CC58B9A4E749}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">17</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Gobang server.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Gobang Server/Gobang server.exe</Property>
@@ -90,18 +87,44 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Gobang Server/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{798A7778-3D74-4C01-9C0D-B7815E12CE92}</Property>
+				<Property Name="Exe_Vardep[0].LibItemID" Type="Ref">/My Computer/GoBang.lvlib/GoBangSharedVar.lvlib</Property>
+				<Property Name="Exe_Vardep[1].LibDeploy" Type="Bool">true</Property>
+				<Property Name="Exe_Vardep[1].LibItemID" Type="Ref">/My Computer/GoBang.lvlib</Property>
+				<Property Name="Exe_VardepDeployAtStartup" Type="Bool">true</Property>
+				<Property Name="Exe_VardepLibItemCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{2050925E-3CA1-4095-B93E-9627DC90E023}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/GoBang.lvlib/Actors/GOBANG Server/Launch GoBang Server.vi</Property>
+				<Property Name="Source[1].properties[0].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[1].propertiesCount" Type="Int">1</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/GoBang.lvlib/GoBangSharedVar.lvlib</Property>
 				<Property Name="Source[2].Library.allowMissingMembers" Type="Bool">true</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">Library</Property>
-				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/GoBang.lvlib/Actors/GOBANG Server/CS++GoBangServer.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[3].properties[0].type" Type="Str">Window has title bar</Property>
+				<Property Name="Source[3].properties[0].value" Type="Bool">true</Property>
+				<Property Name="Source[3].properties[1].type" Type="Str">Show menu bar</Property>
+				<Property Name="Source[3].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[3].properties[2].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[3].properties[2].value" Type="Bool">false</Property>
+				<Property Name="Source[3].properties[3].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[3].properties[3].value" Type="Bool">false</Property>
+				<Property Name="Source[3].propertiesCount" Type="Int">4</Property>
+				<Property Name="Source[3].type" Type="Str">VI</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/GoBang.lvlib/Actors/GOBANG Client/CS++GoBangClient.lvclass/Actor Core.vi</Property>
+				<Property Name="Source[4].properties[0].type" Type="Str">Remove front panel</Property>
+				<Property Name="Source[4].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[4].properties[1].type" Type="Str">Remove block diagram</Property>
+				<Property Name="Source[4].properties[1].value" Type="Bool">false</Property>
+				<Property Name="Source[4].propertiesCount" Type="Int">2</Property>
+				<Property Name="Source[4].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">5</Property>
 				<Property Name="TgtF_companyName" Type="Str">Friedrich-Schiller-Universität Jena</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Gobang Server</Property>
 				<Property Name="TgtF_internalName" Type="Str">Gobang Server</Property>
@@ -109,6 +132,48 @@
 				<Property Name="TgtF_productName" Type="Str">Gobang Server</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{40180798-E37D-4655-90DE-FB2DBE27B15E}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Gobang server.exe</Property>
+			</Item>
+			<Item Name="GoBangBoard" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{FF2CBE96-4551-447F-A4D8-29CA2BA99065}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{96829392-9DD7-417B-AE70-DBD88BBA3E3C}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{4BFF4E90-EE44-4AE2-8B74-15348240ABDC}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">GoBangBoard</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/GoBangBoard</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{D435B501-5E0B-4A5E-BB4A-A8CD332FAAC0}</Property>
+				<Property Name="Bld_version.build" Type="Int">7</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">GoBangBoard.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/GoBangBoard/GoBangBoard.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/GoBangBoard/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{A9CDCA60-43CB-48B7-B81C-EECADFD39D7B}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/GoBang.lvlib/Actors/GOBANG Client/Launch GobangBoard.vi</Property>
+				<Property Name="Source[1].properties[0].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[1].propertiesCount" Type="Int">1</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">Friedrich-Schiller-Universität Jena</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">GoBangBoard</Property>
+				<Property Name="TgtF_internalName" Type="Str">GoBangBoard</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2015 Friedrich-Schiller-Universität Jena</Property>
+				<Property Name="TgtF_productName" Type="Str">GoBangBoard</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{4EB87588-CCF7-43D3-94AF-0BE687B1D68D}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">GoBangBoard.exe</Property>
 			</Item>
 		</Item>
 	</Item>
